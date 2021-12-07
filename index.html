@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Câu lệnh điều kiện</title>
+  <!-- BS4 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Bài 1 -->
+    <div class="w-50 py-5 text-center">
+      <div class="card rounded">
+        <div class="card-header bg-dark text-light text-uppercase">
+          Sắp xếp 3 số theo thứ tự tăng dần
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <input type="number" class="form-control" id="inpNumber1" placeholder="Enter first number">
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control" id="inpNumber2" placeholder="Enter second number">
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control" id="inpNumber3" placeholder="Enter third number">
+            </div>
+            <button type="button" class="btn btn-primary w-100" id="btnSubmit" onclick="sortUp()">Sắp xếp</button>
+          </form>
+          <p class="alert alert-success my-3" id="txtTextNumber"></p>
+        </div>
+      </div>
+
+    </div>
+    <!-- Bài 2 -->
+    <div class="w-50 py-5 text-center">
+      <div class="card rounded">
+        <div class="card-header bg-dark text-light text-uppercase">
+          Chương trình chào hỏi
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <select class="form-control" id="family">
+                <option>Chọn thành viên</option>
+                <option value="bo">Bố</option>
+                <option value="me">Mẹ</option>
+                <option value="anh">Anh trai</option>
+                <option value="em">Em gái</option>
+              </select>
+            </div>
+            <button type="button" class="btn btn-success w-100" id="btnreeting" onclick="greeting()">Nhấn để chào
+              hỏi</button>
+          </form>
+          <p class="alert alert-success my-3" id="txtFamily"></p>
+        </div>
+      </div>
+
+    </div>
+    <!-- Bài 3 -->
+    <div class="w-50 py-5 text-center">
+      <div class="card rounded">
+        <div class="card-header bg-dark text-light text-uppercase">
+          Chương trình đếm số chẵn và lẻ
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <input type="number" class="form-control" id="inpInt1" placeholder="Enter first number">
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control" id="inpInt2" placeholder="Enter second number">
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control" id="inpInt3" placeholder="Enter third number">
+            </div>
+            <button type="button" class="btn btn-danger w-100" id="btnCount" onclick="countNumber()">Đếm</button>
+          </form>
+          <p class="alert alert-success my-3" id="txtCount"></p>
+        </div>
+      </div>
+
+    </div>
+    <!-- Bài 4 -->
+    <div class="w-50 py-5 text-center">
+      <div class="card rounded">
+        <div class="card-header bg-dark text-light text-uppercase">
+          Chương trình tìm tam giác
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <input type="number" class="form-control" id="inpEdge1" placeholder="Enter first edge">
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control" id="inpEdge2" placeholder="Enter second edge">
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control" id="inpEdge3" placeholder="Enter third edge">
+            </div>
+            <button type="button" class="btn btn-warning w-100" id="btnFind" onclick="findTriangle()">Tìm tam giác</button>
+          </form>
+          <p class="alert alert-success my-3" id="txtFind"></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <!-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- BS4 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
